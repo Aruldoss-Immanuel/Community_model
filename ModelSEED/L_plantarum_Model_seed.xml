@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" sboTerm="SBO:0000624" level="3" version="1" fbc:required="false">
+  <model metaid="meta_L_plantarum" id="L_plantarum" fbc:strict="true">
+    <listOfUnitDefinitions>
+      <unitDefinition id="mmol_per_gDW_per_hr">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="c0" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="M_cpd11461_c0" name="DNA [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C15H23O13P2R3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11461_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00115_c0" name="dATP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H13N5O12P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00115_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00241_c0" name="dGTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H13N5O13P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00241_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00356_c0" name="dCTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C9H13N3O13P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00356_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00357_c0" name="TTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H14N2O14P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00357_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00012_c0" name="PPi [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="HO7P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00012_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd11463_c0" name="Protein [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H5N2O3R2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11463_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00023_c0" name="L-Glutamate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C5H8NO4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00023_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00033_c0" name="Glycine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C2H5NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00033_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00035_c0" name="L-Alanine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H7NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00035_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00039_c0" name="L-Lysine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="C6H15N2O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00039_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00041_c0" name="L-Aspartate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C4H6NO4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00041_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00051_c0" name="L-Arginine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="C6H15N4O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00051_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00053_c0" name="L-Glutamine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H10N2O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00053_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00054_c0" name="L-Serine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H7NO3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00054_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00060_c0" name="L-Methionine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H11NO2S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00060_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00065_c0" name="L-Tryptophan [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C11H12N2O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00065_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00066_c0" name="L-Phenylalanine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H11NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00066_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00069_c0" name="L-Tyrosine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H11NO3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00069_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00084_c0" name="L-Cysteine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C3H7NO2S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00084_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00107_c0" name="L-Leucine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H13NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00107_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00119_c0" name="L-Histidine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H9N3O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00119_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00129_c0" name="L-Proline [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H9NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00129_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00132_c0" name="L-Asparagine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H8N2O3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00132_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00156_c0" name="L-Valine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C5H11NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00156_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00161_c0" name="L-Threonine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C4H9NO3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00161_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00322_c0" name="L-Isoleucine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C6H13NO2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00322_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd11462_c0" name="mRNA [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="null">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11462_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00002_c0" name="ATP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H13N5O13P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00002_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00038_c0" name="GTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C10H13N5O14P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00038_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00052_c0" name="CTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C9H13N3O14P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00052_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00062_c0" name="UTP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C9H12N2O15P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00062_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00010_c0" name="CoA [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C21H32N7O16P3S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00010_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd11493_c0" name="ACP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C11H22N2O7PRS">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11493_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00003_c0" name="NAD [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C21H26N7O14P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00003_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00006_c0" name="NADP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C21H25N7O17P3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00006_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00205_c0" name="K+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="K">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00205_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00254_c0" name="Mg [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Mg">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00254_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd10516_c0" name="fe3 [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="3" fbc:chemicalFormula="Fe">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd10516_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00063_c0" name="Ca2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Ca">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00063_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00009_c0" name="Phosphate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="HO4P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00009_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00099_c0" name="Cl- [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="Cl">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00099_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00149_c0" name="Co2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Co">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00149_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00058_c0" name="Cu2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Cu">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00058_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00015_c0" name="FAD [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C27H30N9O15P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00015_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd10515_c0" name="Fe2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Fe">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd10515_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00030_c0" name="Mn2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Mn">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00030_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00048_c0" name="Sulfate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="O4S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00048_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00034_c0" name="Zn2+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="Zn">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00034_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00016_c0" name="Pyridoxal phosphate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C8H8NO6P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00016_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00220_c0" name="Riboflavin [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C17H19N4O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00220_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00017_c0" name="S-Adenosyl-L-methionine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="C15H23N6O5S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00017_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00201_c0" name="10-Formyltetrahydrofolate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C20H21N7O7">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00201_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00087_c0" name="Tetrahydrofolate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C19H21N7O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00087_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00345_c0" name="5-Methyltetrahydrofolate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C20H23N7O6">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00345_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00042_c0" name="GSH [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C10H16N3O6S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00042_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00028_c0" name="Heme [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C34H30FeN4O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00028_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00557_c0" name="Siroheme [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-8" fbc:chemicalFormula="C42H36FeN4O16">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00557_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00264_c0" name="Spermidine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="3" fbc:chemicalFormula="C7H22N3">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00264_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00118_c0" name="Putrescine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="C4H14N2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00118_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00056_c0" name="TPP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C12H17N4O7P2S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00056_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15560_c0" name="Ubiquinone-8 [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C49H74O4">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15560_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15352_c0" name="2-Demethylmenaquinone 8 [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C50H70O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15352_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15500_c0" name="Menaquinone 8 [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C51H72O2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15500_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00166_c0" name="Calomide [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="2" fbc:chemicalFormula="C72H102CoN18O17P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00166_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00104_c0" name="BIOT [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C10H15N2O3S">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00104_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00050_c0" name="FMN [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-3" fbc:chemicalFormula="C17H18N4O9P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00050_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00037_c0" name="UDP-N-acetylglucosamine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C17H25N3O17P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00037_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15793_c0" name="Stearoylcardiolipin (B. subtilis) [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C81H156O17P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15793_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15540_c0" name="Phosphatidylglycerol dioctadecanoyl [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-1" fbc:chemicalFormula="C42H82O10P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15540_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15533_c0" name="phosphatidylethanolamine dioctadecanoyl [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C41H82NO8P">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15533_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15748_c0" name="Stearoyllipoteichoic acid (n=24), linked, unsubstituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-24" fbc:chemicalFormula="C123H240O135P24">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15748_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15757_c0" name="Stearoyllipoteichoic acid (n=24), linked, glucose substituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-24" fbc:chemicalFormula="C267H480O255P24">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15757_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15766_c0" name="Stearoyllipoteichoic acid (n=24), linked, N-acetyl-D-glucosamine [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-24" fbc:chemicalFormula="C315H552N24O255P24">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15766_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15775_c0" name="Stearoyllipoteichoic acid (n=24), linked, D-alanine substituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-24" fbc:chemicalFormula="C195H360N24O159P24">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15775_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15667_c0" name="glycerol teichoic acid (n=45), linked, unsubstituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-48" fbc:chemicalFormula="C191H359N10O259P46R">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15667_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15668_c0" name="glycerol teichoic acid (n=45), linked, D-ala substituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-48" fbc:chemicalFormula="C326H584N55O304P46R">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15668_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15669_c0" name="glycerol teichoic acid (n=45), linked, glucose substituted [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-48" fbc:chemicalFormula="C461H809N10O484P46R">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15669_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd11459_c0" name="tcam [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-30" fbc:chemicalFormula="C420H692N30O391P30">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11459_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd02229_c0" name="Bactoprenyl diphosphate [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C55H90O7P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd02229_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15665_c0" name="Peptidoglycan polymer (n subunits) [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-4" fbc:chemicalFormula="C80H125N16O42R">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15665_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd11416_c0" name="Biomass [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="null">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd11416_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd12370_c0" name="apo-ACP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="HOR">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd12370_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd01997_c0" name="Dimethylbenzimidazole [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="C9H10N2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd01997_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd03422_c0" name="Cobinamide [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="3" fbc:chemicalFormula="C48H75CoN11O8">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd03422_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd15666_c0" name="Peptidoglycan polymer (n-1 subunits) [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C40H63N8O21R">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd15666_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00001_c0" name="H2O [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0" fbc:chemicalFormula="H2O">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00001_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00008_c0" name="ADP [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="-2" fbc:chemicalFormula="C10H13N5O10P2">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00008_c</p>
+          </html>
+        </notes>
+      </species>
+      <species id="M_cpd00067_c0" name="H+ [c0]" compartment="c0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="1" fbc:chemicalFormula="H">
+        <notes>
+          <html xmlns="http://www.w3.org/1999/xhtml">
+            <p>modelseed_template_id: cpd00067_c</p>
+          </html>
+        </notes>
+      </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="cobra_default_ub" value="1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="cobra_0_bound" value="0" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="minus_inf" value="-INF" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="plus_inf" value="INF" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction metaid="meta_R_rxn05294_c0" id="R_rxn05294_c0" name="DNA synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_rxn05294_c0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.reaction/rxn05294"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_cpd00115_c0" stoichiometry="0.516637656497864" constant="true"/>
+          <speciesReference species="M_cpd00241_c0" stoichiometry="0.516637656497864" constant="true"/>
+          <speciesReference species="M_cpd00356_c0" stoichiometry="0.516637656497864" constant="true"/>
+          <speciesReference species="M_cpd00357_c0" stoichiometry="0.516637656497864" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_cpd00012_c0" stoichiometry="2.06655062599146" constant="true"/>
+          <speciesReference species="M_cpd11461_c0" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_rxn05296_c0" id="R_rxn05296_c0" name="Protein synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_rxn05296_c0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.reaction/rxn05296"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_cpd00001_c0" stoichiometry="27.0993697627546" constant="true"/>
+          <speciesReference species="M_cpd00002_c0" stoichiometry="34.8420468378274" constant="true"/>
+          <speciesReference species="M_cpd00023_c0" stoichiometry="0.493257855467681" constant="true"/>
+          <speciesReference species="M_cpd00033_c0" stoichiometry="0.773570796879456" constant="true"/>
+          <speciesReference species="M_cpd00035_c0" stoichiometry="0.505647377740025" constant="true"/>
+          <speciesReference species="M_cpd00039_c0" stoichiometry="0.611732662196967" constant="true"/>
+          <speciesReference species="M_cpd00041_c0" stoichiometry="0.280312941411775" constant="true"/>
+          <speciesReference species="M_cpd00051_c0" stoichiometry="0.365490907034137" constant="true"/>
+          <speciesReference species="M_cpd00053_c0" stoichiometry="0.493257855467681" constant="true"/>
+          <speciesReference species="M_cpd00054_c0" stoichiometry="0.409628580129362" constant="true"/>
+          <speciesReference species="M_cpd00060_c0" stoichiometry="0.214493604339949" constant="true"/>
+          <speciesReference species="M_cpd00065_c0" stoichiometry="0.102987903888857" constant="true"/>
+          <speciesReference species="M_cpd00066_c0" stoichiometry="0.332968411069235" constant="true"/>
+          <speciesReference species="M_cpd00069_c0" stoichiometry="0.20984753348782" constant="true"/>
+          <speciesReference species="M_cpd00084_c0" stoichiometry="0.107633974740985" constant="true"/>
+          <speciesReference species="M_cpd00107_c0" stoichiometry="0.656644680434213" constant="true"/>
+          <speciesReference species="M_cpd00119_c0" stoichiometry="0.154869028404296" constant="true"/>
+          <speciesReference species="M_cpd00129_c0" stoichiometry="0.304317640814441" constant="true"/>
+          <speciesReference species="M_cpd00132_c0" stoichiometry="0.280312941411775" constant="true"/>
+          <speciesReference species="M_cpd00156_c0" stoichiometry="0.58153320165813" constant="true"/>
+          <speciesReference species="M_cpd00161_c0" stoichiometry="0.353101384761794" constant="true"/>
+          <speciesReference species="M_cpd00322_c0" stoichiometry="0.511067793734175" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_cpd00008_c0" stoichiometry="34.8420468378274" constant="true"/>
+          <speciesReference species="M_cpd00009_c0" stoichiometry="34.8420468378274" constant="true"/>
+          <speciesReference species="M_cpd00067_c0" stoichiometry="34.8420468378274" constant="true"/>
+          <speciesReference species="M_cpd11463_c0" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_rxn05295_c0" id="R_rxn05295_c0" name="mRNA synthesis" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_R_rxn05295_c0">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/seed.reaction/rxn05295"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="M_cpd00002_c0" stoichiometry="0.524959258476131" constant="true"/>
+          <speciesReference species="M_cpd00038_c0" stoichiometry="0.647182597281642" constant="true"/>
+          <speciesReference species="M_cpd00052_c0" stoichiometry="0.398728597086832" constant="true"/>
+          <speciesReference species="M_cpd00062_c0" stoichiometry="0.43078717775713" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_cpd00012_c0" stoichiometry="2.00165763060173" constant="true"/>
+          <speciesReference species="M_cpd11462_c0" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_bio1" sboTerm="SBO:0000629" id="R_bio1" name="GramNegativeBiomass" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_cpd00001_c0" stoichiometry="40" constant="true"/>
+          <speciesReference species="M_cpd00002_c0" stoichiometry="40" constant="true"/>
+          <speciesReference species="M_cpd00003_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00006_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00010_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00015_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00016_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00017_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00028_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00030_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00034_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00037_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00042_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00048_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00050_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00056_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00058_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00063_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00087_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00099_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00104_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00118_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00149_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00166_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00201_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00205_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00220_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00254_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00264_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00345_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd00557_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd02229_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd10515_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd10516_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd11459_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd11461_c0" stoichiometry="0.0185166" constant="true"/>
+          <speciesReference species="M_cpd11462_c0" stoichiometry="0.0580167" constant="true"/>
+          <speciesReference species="M_cpd11463_c0" stoichiometry="0.5209166" constant="true"/>
+          <speciesReference species="M_cpd11493_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd15352_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd15500_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd15533_c0" stoichiometry="0.0225795044280505" constant="true"/>
+          <speciesReference species="M_cpd15540_c0" stoichiometry="0.0225795044280505" constant="true"/>
+          <speciesReference species="M_cpd15560_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd15665_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15667_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15668_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15669_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15748_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15757_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15766_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15775_c0" stoichiometry="0.0030011515547737" constant="true"/>
+          <speciesReference species="M_cpd15793_c0" stoichiometry="0.0225795044280505" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M_cpd00008_c0" stoichiometry="40" constant="true"/>
+          <speciesReference species="M_cpd00009_c0" stoichiometry="39.9933469116635" constant="true"/>
+          <speciesReference species="M_cpd00067_c0" stoichiometry="40" constant="true"/>
+          <speciesReference species="M_cpd01997_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd03422_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd11416_c0" stoichiometry="1" constant="true"/>
+          <speciesReference species="M_cpd12370_c0" stoichiometry="0.0066530883364704" constant="true"/>
+          <speciesReference species="M_cpd15666_c0" stoichiometry="0.0120046062190948" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="meta_R_SK_cpd11416_c0" sboTerm="SBO:0000632" id="R_SK_cpd11416_c0" name="Sink for Biomass [c0]" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_default_ub">
+        <listOfReactants>
+          <speciesReference species="M_cpd11416_c0" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="meta_R_DM_cpd11416_c0" sboTerm="SBO:0000628" id="R_DM_cpd11416_c0" name="Demand for Biomass [c0]" reversible="true" fast="false" fbc:lowerFluxBound="cobra_default_lb" fbc:upperFluxBound="cobra_0_bound">
+        <listOfReactants>
+          <speciesReference species="M_cpd11416_c0" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+    </listOfReactions>
+    <fbc:listOfObjectives fbc:activeObjective="obj">
+      <fbc:objective fbc:id="obj" fbc:type="maximize">
+        <fbc:listOfFluxObjectives>
+          <fbc:fluxObjective fbc:reaction="R_bio1" fbc:coefficient="1"/>
+        </fbc:listOfFluxObjectives>
+      </fbc:objective>
+    </fbc:listOfObjectives>
+  </model>
+</sbml>
